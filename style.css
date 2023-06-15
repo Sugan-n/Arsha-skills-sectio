@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root{
+    --blue-on-top:#3e4e69;
+    --white-on-top:#ffffff;
+    --font-on-top: #3e4e69;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+    place-items: center;
+    min-height: 100vh;
+}
+.skillsImage img{
+    width: 100%;
+    height: auto;
+    background-size:cover;
+}
+.skillsContents h3{
+    font-family: 'poppins',sans-serif;
+    color: #4668a2;
+    font-size: 32px;
+    font-weight:700;
+}
+.skillsContents p{
+    font-family: 'open Sans',sans-serif;
+    font-family: 12px;
+    font-style: italic;
+    color: #444444;
+}
+.skillsProgress .progress-bar{
+    background-color: #4668a2!important;
+}
+.skillsProgress .progress {
+    height: 10px;
+    border-radius: 0;
+    width: 80%;
+  }
+  .skillsPercentile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .skillsProgress h6{
+    margin-top: 20px;
+    font-family: 'poppins',sans-serif;
+    color: #3e4e69;
+    font-size: 12px;
+  }
+  @media screen and (max-width:576px){
+    .skills{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .skillsProgress .progress{
+        width: 100%;
+    }
+    .skillsPercentile{
+        width: 100%;
+      }
+
+  }
